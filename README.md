@@ -25,7 +25,7 @@ Your webpage will have to implement the features listed below. Note that the exa
 4. Navbar Resizing: Navigation bar must be larger when users are at the top of the page. As users start scrolling down, it should resize and become smaller. Note that the text font size should also start larger and become smaller as users scroll down - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/4.gif)
 5. Smooth Scrolling: Smooth scrolling when navigating to a different section using the navigation bar - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/5.gif)
 6. Carousel: A section with a carousel/slider using a minimum of three slides. It should include the navigation arrows on the side - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/6.gif)
-7. Multi-column layout: A section with Multi-column content - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/8.png)
+7. Multi-column layout: A section with Multi-column content (3 or more columns) - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/8.png)
 8. Centering: Content in each horizontal stripe/section must be horizontally centered. At least one element on the page must be vertically centered. The vertically-centered element should remain centered even if the dimensions of its outer element changes.
 9. Responsiveness: Your webpage should look good when resized to the following resolutions:
   - 1920x1080
