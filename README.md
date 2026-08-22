@@ -1,5 +1,5 @@
 # MP #1: One Web Page To Rule Them All
-### Due: September 23 2025, 11:59PM CDT
+### Due: Tuesday, Sep 22, 2026, 11:59PM CT
 
 ## Table of Contents
 1. [Assignment](#assignment)
@@ -7,7 +7,7 @@
 3. [Rules](#rules)
 4. [Getting Started](#getting-started)
 5. [Submission Details](#submission-details)
-5. [Large Language Model Usage Policy](#large-language-model-usage-policy)
+6. [Large Language Model Usage Policy](#large-language-model-usage-policy)
 
 ## Assignment
 
@@ -19,22 +19,22 @@ In this programming assignment, you will design and implement a single-page webs
 
 Your webpage will have to implement the features listed below. Note that the examples are only meant to illustrate the features. You do not have to make your webpage look similar to the examples. You just have to incorporate that feature in some form.
 
-1. Layout: All content must be laid out in a single page with full-width horizontal stripes/sections including a header and a footer - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/2.png)
-2. Sticky Navbar: A top navigation bar that sticks to the top of the window when scrolling - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/3.gif)
+1. Layout: All content must be laid out in a single page with full-width horizontal stripes/sections including a header and a footer - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/2.png)
+2. Sticky Navbar: A top navigation bar that sticks to the top of the window when scrolling - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/3.gif)
 3. Position Indicator: Indicator of the current reading position visible in the navigation bar (see above gif for example). Make sure your implementation highlights the last menu item when you scroll to the bottom of the page. ( __Implementation Tip__ : To figure out which menu item to highlight, you’ll have to figure out which section lies directly below the bottom margin of the navigation bar. You can use methods that give you the height and position of different divs to figure that out. You will want to recompute this whenever there is a scroll event.)
-4. Navbar Resizing: Navigation bar must be larger when users are at the top of the page. As users start scrolling down, it should resize and become smaller. Note that the text font size should also start larger and become smaller as users scroll down - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/4.gif)
-5. Smooth Scrolling: Smooth scrolling when navigating to a different section using the navigation bar - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/5.gif)
-6. Carousel: A section with a carousel/slider using a minimum of three slides. It should include the navigation arrows on the side - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/6.gif)
-7. Multi-column layout: A section with Multi-column content (3 or more columns) - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/8.png)
+4. Navbar Resizing: Navigation bar must be larger when users are at the top of the page. As users start scrolling down, it should resize and become smaller. Note that the text font size should also start larger and become smaller as users scroll down - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/4.gif)
+5. Smooth Scrolling: Smooth scrolling when navigating to a different section using the navigation bar - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/5.gif)
+6. Carousel: A section with a carousel/slider using a minimum of three slides. It should include the navigation arrows on the side - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/6.gif)
+7. Multi-column layout: A section with Multi-column content (3 or more columns) - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/8.png)
 8. Centering: Content in each horizontal stripe/section must be horizontally centered. At least one element on the page must be vertically centered. The vertically-centered element should remain centered even if the dimensions of its outer element changes.
 9. Responsiveness: Your webpage should look good when resized to the following resolutions:
   - 1920x1080
   - 1366x768
   - 1280x720
   - 1024x768
-10. Background Image: A section which uses a fixed-position background image - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/9.gif)
-11. Modal: A section which uses modal windows with additional content - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/10.gif)
-12. Video: Embedded video using HTML5 video tag - [Example](https://uiuc-web-programming.gitlab.io/sp20/images/mp1/11_2.gif)
+10. Background Image: A section which uses a fixed-position background image - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/9.gif)
+11. Modal: A section which uses modal windows with additional content - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/10.gif)
+12. Video: Embedded video using HTML5 video tag - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/11_2.gif)
 13. CSS3 Animations: At least one use of CSS3 animations (e.g. fade in/out, transitions)
 14. At least one use of scalable vector icons through CSS (e.g. FontAwesome)
 15. Inclusion of social media icons
@@ -68,19 +68,13 @@ Your webpage will have to implement the features listed below. Note that the exa
 8. You must utilize some SCSS features (variables, mixins, etc). A plain CSS file will receive less points.
 
 ## Getting Started
-### Clone Class Repo
-1. Clone the repository:
-`git clone git@github.com:cs409-fa25/mp1.git mp1`, then `cd mp1`
-2. [Create a public repository on GitHub.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) Make sure "Initialize this repository with a README" is **not** checked.
-3. Change the remote url for the mp1 directory to the url of the new private repository you created.
-```
-git remote rename origin old-origin
-git remote add origin git@github.com:<your-gitlab-username>/mp1.git
-# run `git remote -v` to check your origin 
-```
-4. Install dependencies:
+### Create Your Repo From the Template
+1. On the [class repo](https://github.com/cs409-fa25/mp1), click **Use this template** > **Create a new repository**. Name it `mp1` and make it **public** (GitHub Pages requires a public repo on a free account).
+2. Clone the repository you just created:
+`git clone git@github.com:<your-github-username>/mp1.git mp1`, then `cd mp1`
+3. Install dependencies:
 `npm install`
-5. Start the dev server:
+4. Start the dev server:
 `npm start`
 6. Open a browser and go to `http://localhost:8080/` to view your page. You should see "Hello World! Welcome to MP1!" at the top of the screen. Note that if for some reason your port 8080 is occupied, it will default to 8081.
 7. Work on your MP code and satisfy all the grading [requirements](#Requirements)
@@ -95,11 +89,14 @@ You will need to do some additional work to properly deploy the website. There a
 
 ## Submission Details
 
-1. Make a video (3 minutes max) demo-ing your deployed website and upload it to Google Drive. Share it with `uiuc.web.programming@gmail.com` and put the share link in the google form.
+> **TODO (staff): link the Fall 2026 submission form here before release.** The Fall 2025 form has been removed -- do not reuse it, or submissions land in last year's response sheet.
+
+
+1. Make a video (3 minutes max) demo-ing your deployed website and upload it to Google Drive. Share it with `uiuc.web.programming@gmail.com` and put the share link in the submission form.
   - Show the url to prove you are on your deployed website. Then show all the requirement features you fulfilled in your mp.
   - If you were unable to deploy your website, you can demo your mp locally for some point deduction (hard capped at 80%)
     - Just make sure you do `git status` and `git log` first so we can see your last edits.
-2. Fill out and submit the form [here](https://forms.gle/Xyr7YhBBLdafny3H6)
+2. Fill out and submit the form [here](https://forms.gle/jfgQnaTSVmhrt2DH8)
 
 ## Large Language Model Usage Policy
 
