@@ -89,9 +89,6 @@ You will need to do some additional work to properly deploy the website. There a
 
 ## Submission Details
 
-> **TODO (staff): link the Fall 2026 submission form here before release.** The Fall 2025 form has been removed -- do not reuse it, or submissions land in last year's response sheet.
-
-
 1. Make a video (3 minutes max) demo-ing your deployed website and upload it to Google Drive. Share it with `uiuc.web.programming@gmail.com` and put the share link in the submission form.
   - Show the url to prove you are on your deployed website. Then show all the requirement features you fulfilled in your mp.
   - If you were unable to deploy your website, you can demo your mp locally for some point deduction (hard capped at 80%)
