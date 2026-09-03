@@ -32,17 +32,19 @@ Your webpage will have to implement the features listed below. Note that the exa
   - 1366x768
   - 1280x720
   - 1024x768
+  - 768x1024
 10. Background Image: A section which uses a fixed-position background image - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/9.gif)
 11. Modal: A section which uses modal windows with additional content - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/10.gif)
 12. Video: Embedded video using HTML5 video tag - [Example](https://cs409-fa25.github.io/fa-26/images/mp1/11_2.gif)
-13. CSS3 Animations: At least one use of CSS3 animations (e.g. fade in/out, transitions)
-14. At least one use of scalable vector icons through CSS (e.g. FontAwesome)
-15. Inclusion of social media icons
+13. SCSS features/CSS variables - You must utilize some SCSS features (e.g. variables, mixins, etc). A plain CSS file will receive less points.
+14. CSS3 Animations: At least one use of CSS3 animations (e.g. fade in/out, transitions)
+15. At least one use of scalable vector icons through CSS (e.g. FontAwesome)
+16. Inclusion of social media icons
 
 ## Grading Breakdown
 
-- Layout and Overall Design - 20%
-- Code (follows HTML5, SASS/SCSS, ES5 or ES6 best practices) - 13%
+- Layout and Overall Design (includes but not limited to the use of consistent paddings and margins, appropriate font sizes and weights, centering and uniformity, foreground and background colors, user experience, efforts to make the UI better, etc.) - 20%
+- Code (follows HTML5, SASS/SCSS, ES5 or ES6 best practices) - 12%
 - Smooth Scrolling - 10%
 - Carousel - 10%
 - Modal - 10%
@@ -50,6 +52,7 @@ Your webpage will have to implement the features listed below. Note that the exa
 - Position Indicator - 5%
 - Navbar Resizing - 5%
 - Multi-column layout - 5%
+- SCSS features/CSS variables - 1%
 - CSS3 Animations - 5%
 - Centering - 2%
 - Video - 2%
@@ -65,7 +68,6 @@ Your webpage will have to implement the features listed below. Note that the exa
 5. No inline script tags should be used.
 6. HTML tables cannot be used for layout.
 7. If you think something you’re doing might not be acceptable, please ask on Piazza.
-8. You must utilize some SCSS features (variables, mixins, etc). A plain CSS file will receive less points.
 
 ## Getting Started
 ### Create Your Repo From the Template
