@@ -1,1 +1,256 @@
-/* Your SCSS here. */
+// 13. CSS variables
+$background: #1b1f27;
+$background-alt: #262b36;
+$text: #f5f6fa;
+$text-muted: #9aa1b4;
+$accent: #4fc3f7;
+$highlight: #ff6b6b;
+$transition-speed: 0.25s;
+
+body {
+    font-family: sans-serif;
+    color: $text;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+// 2. Sticky navbar
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: $background;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: height $transition-speed ease, font-size $transition-speed ease;
+
+    // 4. Navbar resizing
+    &.small {
+        height: 60px;
+        font-size: 1.2rem;
+
+        a {
+            font-size: 0.85rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+    }
+
+    li {
+        margin: 0 15px;
+    }
+
+    a {
+        color: $text-muted;
+        text-decoration: none;
+        transition: color $transition-speed ease;
+
+        &:hover {
+            color: $accent;
+        }
+
+        // 3. Position indicator
+        &.active {
+            color: $highlight;
+            font-weight: bold;
+        }
+    }
+
+    div {
+      padding-left: 50px;
+      font-size: 24px;
+      color: $text-muted;
+    }
+}
+
+// 14. CSS3 animation
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s;
+}
+
+// 1. Layout + 8. Centering
+.section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $background;
+
+    h1, h2 {
+        color: $accent;
+    }
+}
+
+#about, #skills {
+    background-color: $background-alt;
+}
+
+// 10. Background image
+.bg-image {
+    background-image: url('../assets/image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+// 6. Carousel
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .track {
+        width: 400px;
+        height: 200px;
+        background-color: $background-alt;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: $text;
+        font-size: 1.1rem;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .slide {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+// 7. Multi-column layout
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 30px;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    div {
+        background-color: $background-alt;
+        color: $text-muted;
+        padding: 20px;
+        border-radius: 6px;
+        border-top: 3px solid $accent;
+    }
+}
+
+#open-modal {
+    margin-top: 20px;
+    background-color: $accent;
+    color: $background;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color $transition-speed ease;
+
+    &:hover {
+        background-color: $highlight;
+    }
+}
+
+// 11. Modal
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.hidden {
+        display: none;
+    }
+
+    .modal-content {
+        background-color: $background-alt;
+        color: $text;
+        padding: 30px;
+        border-radius: 8px;
+        border-top: 3px solid $highlight;
+    }
+}
+
+.footer {
+    width: 100%;
+    padding: 8px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-alt;
+    color: $text-muted;
+
+    // 15. Scalable vector icons
+    // 16. Social media icons
+    .social {
+        display: flex;
+
+        a {
+            color: $text-muted;
+            margin: 0 10px;
+            transition: color $transition-speed ease;
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
+
+// 9. Responsiveness
+@media (max-width: 900px) {
+    .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel .track {
+        width: 90%;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        ul {
+            padding: 0;
+        }
+
+        a {
+            font-size: 0.9rem;
+        }
+    }
+}

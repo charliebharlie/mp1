@@ -5,9 +5,88 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <nav id="navbar" class="navbar fade-in">
+            <div class="logo">CL</div>
+            <ul>
+                <li><a href="#home" data-section="home">Home</a></li>
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#gallery" data-section="gallery">Gallery</a></li>
+                <li><a href="#skills" data-section="skills">Skills</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header id="home" class="section fade-in">
+            <h1>Welcome to MP1!</h1>
+            <p>Scroll down to check out the rest of the sections</p>
+        </header>
+
+        <!-- 10. Background image -->
+        <section id="about" class="section bg-image">
+            <h2>About</h2>
+            <p>Me as a polar bear </p>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="carousel">
+                <button id="carousel-prev"> << </button>
+                <div class="track">
+                    <div class="slide active">Slide 1</div>
+                    <div class="slide">Slide 2</div>
+                    <div class="slide">Slide 3</div>
+                </div>
+                <button id="carousel-next"> >> </button>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="columns">
+                <div>
+                    <h3>Baking</h3>
+                    <p>I enjoy baking, I've been baking banana bread and want to try to make tiramisu</p>
+                </div>
+                <div>
+                    <h3>Guitar</h3>
+                    <p>I've been playing guitar since high school, mostly fingerstyle</p>
+                </div>
+                <div>
+                    <h3>Gym</h3>
+                    <p>I enjoy working out as it helps clear my mind</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="section">
+            <h2>Video</h2>
+            <video controls width="800">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <button id="open-modal">Get in touch</button>
+        </section>
+
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-modal">&times;</span>
+                <h3>Contact Me</h3>
+                <p>Feel free to reach out to me at: cliu132@illinois.edu</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>2026 MP1</p>
+            <div class="social">
+                <a href="https://github.com/charliebharlie" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/charlie-liu-2981b7225/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </footer>
     </body>
 </html>
